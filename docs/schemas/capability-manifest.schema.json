@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:erc:tokenized-autonomous-service:capability-manifest:v1",
+  "title": "Tokenized Autonomous Service Capability Manifest",
+  "type": "object",
+  "required": ["schema", "serviceId", "runtimeDiscoveryRequired"],
+  "properties": {
+    "schema": { "const": "erc.tas.capabilityManifest.v1" },
+    "serviceId": { "type": "string" },
+    "mcpProtocolVersion": { "type": "string" },
+    "capabilitySetVersion": { "type": "string" },
+    "runtimeDiscoveryRequired": { "type": "boolean" },
+    "tools": { "type": "array", "items": { "$ref": "#/$defs/tool" } },
+    "resources": { "type": "array", "items": { "$ref": "#/$defs/resource" } },
+    "prompts": { "type": "array", "items": { "$ref": "#/$defs/prompt" } }
+  },
+  "$defs": {
+    "bytes32": { "type": "string", "pattern": "^0x[0-9a-fA-F]{64}$" },
+    "hashPointer": {
+      "type": "object",
+      "required": ["uri", "hash"],
+      "properties": {
+        "uri": { "type": "string" },
+        "hash": { "$ref": "#/$defs/bytes32" }
+      }
+    },
+    "tool": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "inputSchema": { "$ref": "#/$defs/hashPointer" },
+        "outputSchema": { "$ref": "#/$defs/hashPointer" },
+        "risk": { "type": "array", "items": { "type": "string" } },
+        "requiredScopes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "resource": {
+      "type": "object",
+      "required": ["uriTemplate"],
+      "properties": {
+        "uriTemplate": { "type": "string" },
+        "mimeTypes": { "type": "array", "items": { "type": "string" } },
+        "risk": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "prompt": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "argumentNames": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
+

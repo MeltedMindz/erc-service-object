@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">Service Object Architecture</title>
+  <desc id="desc">ERC-721 service token exposes service manifest, operator, and payment route through IERCServiceObject.</desc>
+  <defs>
+    <style>
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 8; }
+      .core { fill: #eef2ff; stroke: #3730a3; stroke-width: 2; rx: 8; }
+      .text { font: 16px sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 14px sans-serif; fill: #334155; text-anchor: middle; dominant-baseline: middle; }
+      .line { stroke: #475569; stroke-width: 2; marker-end: url(#arrow); fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569" />
+    </marker>
+  </defs>
+  <rect class="box" x="40" y="170" width="180" height="70" />
+  <text class="text" x="130" y="196">ERC-721</text>
+  <text class="small" x="130" y="218">service token</text>
+  <rect class="core" x="300" y="160" width="210" height="90" />
+  <text class="text" x="405" y="205">IERCServiceObject</text>
+  <rect class="box" x="600" y="40" width="230" height="70" />
+  <text class="text" x="715" y="66">Service manifest</text>
+  <text class="small" x="715" y="88">URI + hash</text>
+  <rect class="box" x="600" y="160" width="230" height="70" />
+  <text class="text" x="715" y="186">Service operator</text>
+  <text class="small" x="715" y="208">address + expiry</text>
+  <rect class="box" x="600" y="280" width="230" height="80" />
+  <text class="text" x="715" y="306">Payment route</text>
+  <text class="small" x="715" y="330">recipient + URI + hash + nonce</text>
+  <rect class="box" x="900" y="40" width="180" height="70" />
+  <text class="text" x="990" y="66">Runtime profile</text>
+  <text class="small" x="990" y="88">optional</text>
+  <rect class="box" x="900" y="285" width="180" height="70" />
+  <text class="text" x="990" y="311">Payment profile</text>
+  <text class="small" x="990" y="333">optional</text>
+  <rect class="box" x="300" y="315" width="210" height="70" />
+  <text class="text" x="405" y="341">Indexers / clients</text>
+  <text class="small" x="405" y="363">middleware</text>
+  <path class="line" d="M220 205 H300" />
+  <path class="line" d="M510 182 C550 115,560 75,600 75" />
+  <path class="line" d="M510 205 H600" />
+  <path class="line" d="M510 230 C550 275,560 320,600 320" />
+  <path class="line" d="M830 75 H900" />
+  <path class="line" d="M830 320 H900" />
+  <path class="line" d="M405 250 V315" />
+</svg>
+

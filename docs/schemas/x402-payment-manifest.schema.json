@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:erc:tokenized-autonomous-service:x402-payment-manifest:v1",
+  "title": "Tokenized Autonomous Service x402 Payment Manifest",
+  "type": "object",
+  "required": ["schema", "x402Version", "service", "routeNonce", "acceptedRails"],
+  "properties": {
+    "schema": { "const": "erc.tas.x402PaymentManifest.v1" },
+    "x402Version": { "type": "integer", "minimum": 2 },
+    "service": {
+      "type": "object",
+      "required": ["chain", "contract", "tokenId"],
+      "properties": {
+        "chain": { "type": "string", "pattern": "^eip155:[0-9]+$" },
+        "contract": { "type": "string", "pattern": "^0x[0-9a-fA-F]{40}$" },
+        "tokenId": { "type": "string", "pattern": "^[0-9]+$" }
+      }
+    },
+    "routeNonce": { "type": "integer", "minimum": 0 },
+    "origins": { "type": "array", "items": { "type": "string" } },
+    "facilitators": { "type": "array", "items": { "type": "object" } },
+    "acceptedRails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["scheme", "network", "asset", "payTo"],
+        "properties": {
+          "scheme": { "type": "string" },
+          "network": { "type": "string" },
+          "asset": { "type": "string" },
+          "payTo": { "type": "string" },
+          "maxAmount": { "type": "string" },
+          "extra": { "type": "object" }
+        }
+      }
+    },
+    "resources": { "type": "array", "items": { "type": "object" } },
+    "receipts": { "type": "object" },
+    "idempotency": { "type": "object" }
+  }
+}
+

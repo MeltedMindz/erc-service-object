@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:erc:tokenized-autonomous-service:service-receipt:v1",
+  "title": "Tokenized Autonomous Service Usage Receipt",
+  "type": "object",
+  "required": [
+    "schema",
+    "service",
+    "payer",
+    "issuer",
+    "revenueRecipient",
+    "requestHash",
+    "responseHash",
+    "paymentHash",
+    "paymentManifestHash",
+    "receiptURIHash",
+    "routeNonce",
+    "issuerEpoch",
+    "issuedAt"
+  ],
+  "properties": {
+    "schema": { "const": "erc.tas.serviceReceipt.v1" },
+    "service": {
+      "type": "object",
+      "required": ["chainId", "contract", "tokenId"],
+      "properties": {
+        "chainId": { "type": "integer" },
+        "contract": { "type": "string", "pattern": "^0x[0-9a-fA-F]{40}$" },
+        "tokenId": { "type": "string", "pattern": "^[0-9]+$" }
+      }
+    },
+    "payer": { "type": "string" },
+    "issuer": { "type": "string" },
+    "revenueRecipient": { "type": "string" },
+    "requestHash": { "$ref": "#/$defs/bytes32" },
+    "responseHash": { "$ref": "#/$defs/bytes32" },
+    "paymentHash": { "$ref": "#/$defs/bytes32" },
+    "paymentManifestHash": { "$ref": "#/$defs/bytes32" },
+    "receiptURIHash": { "$ref": "#/$defs/bytes32" },
+    "routeNonce": { "type": "integer", "minimum": 0 },
+    "issuerEpoch": { "type": "integer", "minimum": 0 },
+    "issuedAt": { "type": "integer", "minimum": 0 },
+    "signature": { "type": "string" }
+  },
+  "$defs": {
+    "bytes32": { "type": "string", "pattern": "^0x[0-9a-fA-F]{64}$" }
+  }
+}

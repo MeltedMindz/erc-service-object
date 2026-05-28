@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:erc:tokenized-autonomous-service:service-manifest:v1",
+  "title": "Tokenized Autonomous Service Manifest",
+  "type": "object",
+  "required": ["schema", "service", "name", "version", "status"],
+  "properties": {
+    "schema": { "const": "erc.tas.serviceManifest.v1" },
+    "serviceId": { "type": "string" },
+    "name": { "type": "string", "maxLength": 128 },
+    "description": { "type": "string", "maxLength": 2048 },
+    "version": { "type": "string" },
+    "status": { "enum": ["active", "paused", "retired"] },
+    "service": {
+      "type": "object",
+      "required": ["chainId", "standard", "contract", "tokenId"],
+      "properties": {
+        "chainId": { "type": "integer" },
+        "standard": { "enum": ["ERC-721", "ERC-1155"] },
+        "contract": { "type": "string", "pattern": "^0x[0-9a-fA-F]{40}$" },
+        "tokenId": { "type": "string", "pattern": "^[0-9]+$" }
+      }
+    },
+    "mcp": {
+      "type": "object",
+      "properties": {
+        "protocolVersions": { "type": "array", "items": { "type": "string" } },
+        "serverInfo": { "type": "object" },
+        "serverJson": { "$ref": "#/$defs/hashPointer" },
+        "remotes": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "capabilities": { "$ref": "#/$defs/hashPointer" },
+    "payments": {
+      "type": "object",
+      "properties": {
+        "x402ManifestURI": { "type": "string" },
+        "x402ManifestHash": { "$ref": "#/$defs/bytes32" }
+      }
+    },
+    "provenance": { "type": "object" }
+  },
+  "$defs": {
+    "bytes32": { "type": "string", "pattern": "^0x[0-9a-fA-F]{64}$" },
+    "hashPointer": {
+      "type": "object",
+      "required": ["uri", "hash"],
+      "properties": {
+        "uri": { "type": "string" },
+        "hash": { "$ref": "#/$defs/bytes32" }
+      }
+    }
+  }
+}
+

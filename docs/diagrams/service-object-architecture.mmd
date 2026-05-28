@@ -1,0 +1,18 @@
+flowchart LR
+    Token["ERC-721 service token"]
+    Interface["IERCServiceObject"]
+    Manifest["Service manifest URI + hash"]
+    Operator["Service operator + expiry"]
+    Route["Payment route: recipient + URI + hash + nonce"]
+    Payment["Optional payment profile"]
+    Runtime["Optional runtime profile"]
+    Indexers["Indexers / clients / middleware"]
+
+    Token --> Interface
+    Interface --> Manifest
+    Interface --> Operator
+    Interface --> Route
+    Route --> Payment
+    Manifest --> Runtime
+    Interface --> Indexers
+
