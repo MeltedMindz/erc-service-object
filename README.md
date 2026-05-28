@@ -1,6 +1,7 @@
 # ERC Service Objects
 
 [![Foundry](https://img.shields.io/badge/built%20with-Foundry-111111.svg)](https://book.getfoundry.sh/)
+[![CI](https://github.com/MeltedMindz/erc-service-object/actions/workflows/ci.yml/badge.svg)](https://github.com/MeltedMindz/erc-service-object/actions/workflows/ci.yml)
 [![Solidity](https://img.shields.io/badge/solidity-0.8.25-363636.svg)](https://soliditylang.org/)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
 

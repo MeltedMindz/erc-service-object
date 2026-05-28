@@ -1,6 +1,6 @@
 {
   "name": "erc-service-object",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "ERC candidate package for service object manifests, operators, and payment routes.",
   "main": "index.js",
   "directories": {
