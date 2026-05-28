@@ -1,6 +1,8 @@
 # ERC Submission Checklist
 
-Status: public repository and candidate release are complete. Ethereum Magicians discussion and the official `ethereum/ERCs` pull request remain pending until a discussion thread URL exists.
+Status: public repository, candidate release, and early-review `ethereum/ERCs` pull request are complete. Ethereum Magicians discussion remains pending; the ERC PR is intentionally marked pre-discussion and must be updated once the discussion thread exists.
+
+Official early-review PR: https://github.com/ethereum/ERCs/pull/1777
 
 ## Public Repository
 
@@ -29,26 +31,29 @@ Status: public repository and candidate release are complete. Ethereum Magicians
 
 ## ERC Draft
 
-- [ ] Draft follows `ethereum/ERCs/erc-template.md`.
-- [ ] `eip: <to be assigned>` is preserved before editor assignment.
-- [ ] Title is 44 characters or fewer.
-- [ ] Description is one short sentence.
-- [ ] Author field is complete.
-- [ ] `status: Draft`.
-- [ ] `type: Standards Track`.
-- [ ] `category: ERC`.
-- [ ] `created` uses ISO date format.
-- [ ] `requires` includes only dependencies required to understand or implement the specification.
-- [ ] No fake external references.
-- [ ] No marketing claims.
-- [ ] Security Considerations are substantive.
-- [ ] Copyright section uses CC0.
+- [x] Draft follows the current `ethereum/ERCs` preamble order.
+- [x] No ERC number is self-assigned.
+- [x] Title is 44 characters or fewer.
+- [x] Description is one short sentence.
+- [x] Author field is complete.
+- [x] `status: Draft`.
+- [x] `type: Standards Track`.
+- [x] `category: ERC`.
+- [x] `created` uses ISO date format.
+- [x] `requires` includes only dependencies required to understand or implement the specification.
+- [x] No fake external references.
+- [x] No marketing claims.
+- [x] Security Considerations are substantive.
+- [x] Copyright section uses CC0.
+- [ ] Replace `eip: TBD` with the editor-assigned ERC number.
+- [ ] Replace `discussions-to: TBD` with the Ethereum Magicians thread URL.
 
 ## ERC PR
 
-- [ ] Fork `ethereum/ERCs`.
-- [ ] Add draft under `ERCS/eip-draft_service_objects.md`.
-- [ ] Do not self-assign a number.
-- [ ] PR title follows `Add ERC: Service Objects`.
-- [ ] PR body links the Magicians thread and public repository.
-- [ ] CI passes.
+- [x] Fork `ethereum/ERCs`.
+- [x] Add minimal draft under `ERCS/erc-TBD.md`.
+- [x] Do not self-assign a number.
+- [x] PR title follows `Add ERC: Service Objects`.
+- [x] PR body links the public repository and explains that Magicians discussion is pending.
+- [ ] PR body links the Magicians thread.
+- [ ] CI passes after editor number assignment and Magicians discussion URL are available.
