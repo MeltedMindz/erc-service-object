@@ -1,20 +1,23 @@
 # ERC Submission Checklist
 
+Status: public repository and candidate release are complete. Ethereum Magicians discussion and the official `ethereum/ERCs` pull request remain pending until a discussion thread URL exists.
+
 ## Public Repository
 
-- [ ] Repository is public.
-- [ ] License is CC0-1.0.
-- [ ] README explains the minimal ERC shape.
-- [ ] `CONTRIBUTING.md` exists.
-- [ ] `SECURITY.md` exists.
-- [ ] Issue and PR templates exist.
-- [ ] No secrets, credentials, private keys, or populated env files are committed.
-- [ ] `node_modules/`, `out/`, and `cache/` are not committed.
-- [ ] `git submodule update --init --recursive` succeeds.
-- [ ] `npm install` succeeds.
-- [ ] `forge test` succeeds.
-- [ ] `forge fmt --check` succeeds.
-- [ ] Interface IDs are documented.
+- [x] Repository is public.
+- [x] License is CC0-1.0.
+- [x] README explains the minimal ERC shape.
+- [x] `CONTRIBUTING.md` exists.
+- [x] `SECURITY.md` exists.
+- [x] Issue and PR templates exist.
+- [x] No secrets, credentials, private keys, or populated env files are committed.
+- [x] `node_modules/`, `out/`, and `cache/` are not committed.
+- [x] `git submodule update --init --recursive` succeeds.
+- [x] `npm install` succeeds.
+- [x] `npm run docs:links` succeeds.
+- [x] `forge test` succeeds.
+- [x] `forge fmt --check` succeeds.
+- [x] Interface IDs are documented.
 
 ## Ethereum Magicians
 
