@@ -5,7 +5,7 @@
 1. Open an Ethereum Magicians thread in the ERC category.
 2. Present the narrow problem statement and explicitly distinguish the proposal from ERC-8004 and ERC-7656.
 3. Collect feedback from x402, MCP, ERC-6551, account abstraction, Base, wallet, marketplace, and indexing communities.
-4. Submit an ERC PR using `eip: TBD` and the EIP-1 format.
+4. Submit an ERC PR using `eip: <to be assigned>` and the EIP-1 format.
 5. Keep the core interface small and move contentious features into optional extensions.
 
 ## Likely Review Criticism
@@ -62,4 +62,3 @@ The standard should use "service" as the primary term. AI and MCP are important 
 - Keep ERC-6551 and smart accounts optional.
 - Keep x402 settlement schemes out of the ERC.
 - Keep MCP runtime behavior out of the ERC.
-

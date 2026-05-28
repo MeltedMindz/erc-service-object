@@ -45,7 +45,7 @@ Interface family: `IERCServiceObject`
 
 Ticker-style identifier: `TAS`
 
-Possible numbering concept: use an assigned ERC number only after EIP editor review. The proposal should not self-assign a number, but it belongs near the current agent/service ERC discussion cluster and should be submitted as `eip: TBD`.
+Possible numbering concept: use an assigned ERC number only after EIP editor review. The proposal should not self-assign a number; the submission draft should use `eip: <to be assigned>` until an editor assigns one.
 
 ## Minimal Viable Surface
 
@@ -70,4 +70,3 @@ SHOULD remain offchain:
 ## Why This Matters
 
 This is the missing interoperability layer between token ownership, agent/service infrastructure, HTTP-native payments, and verifiable service usage. It lets a marketplace sell a service token, a wallet inspect the service route, an x402 server prove it is the authorized paid endpoint, and an indexer track receipts without forcing all parties into a single registry or payment rail.
-

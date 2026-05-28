@@ -62,6 +62,7 @@ Useful commands:
 
 ```bash
 forge test -vvv
+npm run docs:links
 forge snapshot --snap .gas-snapshot
 forge script script/InterfaceIds.s.sol:InterfaceIds
 ```

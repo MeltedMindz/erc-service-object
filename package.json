@@ -12,6 +12,7 @@
     "test": "forge test",
     "fmt": "forge fmt",
     "fmt:check": "forge fmt --check",
+    "docs:links": "node scripts/check-doc-links.js",
     "snapshot": "forge snapshot --snap .gas-snapshot",
     "interface-ids": "forge script script/InterfaceIds.s.sol:InterfaceIds"
   },
