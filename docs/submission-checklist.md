@@ -1,8 +1,10 @@
 # ERC Submission Checklist
 
-Status: public repository, candidate release, and early-review `ethereum/ERCs` pull request are complete. Ethereum Magicians discussion remains pending; the ERC PR is intentionally marked pre-discussion and must be updated once the discussion thread exists.
+Status: public repository, candidate release, Ethereum Magicians discussion, and early-review `ethereum/ERCs` pull request are complete. The ERC PR now uses the editor-assigned number and proposal-specific discussion URL.
 
 Official early-review PR: https://github.com/ethereum/ERCs/pull/1777
+
+Official Ethereum Magicians discussion: https://ethereum-magicians.org/t/erc-service-objects/28659
 
 ## Public Repository
 
@@ -23,11 +25,11 @@ Official early-review PR: https://github.com/ethereum/ERCs/pull/1777
 
 ## Ethereum Magicians
 
-- [ ] Public discussion thread created in the ERCs category.
-- [ ] Thread links to the public repository.
-- [ ] Thread links to the minimal ERC draft.
-- [ ] Thread asks specifically for ERC-7656, ERC-8004, wallet, indexer, and smart-account review.
-- [ ] Draft `discussions-to` field updated with the thread URL.
+- [x] Public discussion thread created in the ERCs category.
+- [x] Thread links to the public repository.
+- [x] Thread links to the minimal ERC draft.
+- [x] Thread asks specifically for ERC-7656, ERC-8004, wallet, indexer, and smart-account review.
+- [x] Draft `discussions-to` field updated with the thread URL.
 
 ## ERC Draft
 
@@ -45,8 +47,8 @@ Official early-review PR: https://github.com/ethereum/ERCs/pull/1777
 - [x] No marketing claims.
 - [x] Security Considerations are substantive.
 - [x] Copyright section uses CC0.
-- [ ] Replace `eip: TBD` with the editor-assigned ERC number.
-- [ ] Replace `discussions-to: TBD` with the Ethereum Magicians thread URL.
+- [x] Replace `eip: TBD` with the editor-assigned ERC number.
+- [x] Replace `discussions-to: TBD` with the Ethereum Magicians thread URL.
 
 ## ERC PR
 
@@ -54,6 +56,6 @@ Official early-review PR: https://github.com/ethereum/ERCs/pull/1777
 - [x] Add minimal draft under `ERCS/erc-TBD.md`.
 - [x] Do not self-assign a number.
 - [x] PR title follows `Add ERC: Service Objects`.
-- [x] PR body links the public repository and explains that Magicians discussion is pending.
-- [ ] PR body links the Magicians thread.
-- [ ] CI passes after editor number assignment and Magicians discussion URL are available.
+- [x] PR body links the public repository and Magicians discussion.
+- [x] PR body links the Magicians thread.
+- [x] CI passes after editor number assignment and Magicians discussion URL are available.

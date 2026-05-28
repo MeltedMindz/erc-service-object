@@ -117,7 +117,10 @@ Recommended reduced base interface ID:
 
 ## Public Review Status
 
-This is a pre-submission ERC candidate. No ERC number has been assigned. The next process step is public discussion on Ethereum Magicians before opening a pull request against `ethereum/ERCs`.
+This is a pre-submission ERC candidate under review as ERC-8278. Public discussion is live on Ethereum Magicians, and the draft pull request is open against `ethereum/ERCs`.
+
+- Ethereum Magicians discussion: https://ethereum-magicians.org/t/erc-service-objects/28659
+- ERC pull request: https://github.com/ethereum/ERCs/pull/1777
 
 ## License
 
