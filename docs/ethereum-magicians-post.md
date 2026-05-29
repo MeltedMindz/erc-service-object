@@ -1,6 +1,6 @@
 # Ethereum Magicians Post Draft
 
-Live thread: https://ethereum-magicians.org/t/erc-service-objects/28659
+Live thread: https://ethereum-magicians.org/t/erc-8278-service-objects/28659
 
 Title: ERC draft: Service Objects for ERC-721 service assets
 

@@ -4,7 +4,7 @@ Status: public repository, candidate release, Ethereum Magicians discussion, and
 
 Official early-review PR: https://github.com/ethereum/ERCs/pull/1777
 
-Official Ethereum Magicians discussion: https://ethereum-magicians.org/t/erc-service-objects/28659
+Official Ethereum Magicians discussion: https://ethereum-magicians.org/t/erc-8278-service-objects/28659
 
 ## Public Repository
 
